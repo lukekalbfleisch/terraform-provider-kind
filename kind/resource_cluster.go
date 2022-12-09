@@ -141,7 +141,7 @@ func resourceKindClusterRead(d *schema.ResourceData, meta interface{}) error {
 		return err
 	}
 	exportPath := fmt.Sprintf("%s%s%s-config", currentPath, string(os.PathSeparator), name)
-	err = provider.ExportKubeConfig(name, exportPath)
+	err = provider.ExportKubeConfig(name, exportPath, true)
 	if err != nil {
 		d.SetId("")
 		return err
