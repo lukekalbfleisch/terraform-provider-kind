@@ -1,8 +1,9 @@
 package main
 
 import (
+	"github.com/lukekalbfleisch/terraform-provider-kind/kind"
+
 	"github.com/hashicorp/terraform-plugin-sdk/plugin"
-	"github.com/kyma-incubator/terraform-provider-kind/kind"
 )
 
 func main() {
